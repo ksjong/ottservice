@@ -50,25 +50,12 @@ public class ServiceManagement {
 
     //<<< Clean Arch / Port Method
     public static void startService(Subscribed subscribed) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
         ServiceManagement serviceManagement = new ServiceManagement();
+        serviceManagement.setServiceName(subscribed.getServiceName());
+        serviceManagement.setServiceId(subscribed.getServiceId());
+        serviceManagement.setSubscribeTime(subscribed.getSubscribeTime());
+
         repository().save(serviceManagement);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(subscribed.get???()).ifPresent(serviceManagement->{
-            
-            serviceManagement // do something
-            repository().save(serviceManagement);
-
-
-         });
-        */
-
     }
 
     //>>> Clean Arch / Port Method
