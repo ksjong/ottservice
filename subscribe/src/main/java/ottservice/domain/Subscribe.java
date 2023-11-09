@@ -27,7 +27,7 @@ public class Subscribe {
 
     private Date subscribeDate;
 
-    private Date subscribeTime;
+    private Integer subscribeTime;
 
     @PostPersist
     public void onPostPersist() {

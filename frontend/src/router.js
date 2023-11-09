@@ -11,8 +11,8 @@ import SubscribeSubscribeDetail from "./components/listers/SubscribeSubscribeDet
 import ServiceServiceManagementManager from "./components/listers/ServiceServiceManagementCards"
 import ServiceServiceManagementDetail from "./components/listers/ServiceServiceManagementDetail"
 
-import SubscriberManageSubscriberManagementManager from "./components/listers/SubscriberManageSubscriberManagementCards"
-import SubscriberManageSubscriberManagementDetail from "./components/listers/SubscriberManageSubscriberManagementDetail"
+import SubscribermanageSubscriberManagementManager from "./components/listers/SubscribermanageSubscriberManagementCards"
+import SubscribermanageSubscriberManagementDetail from "./components/listers/SubscribermanageSubscriberManagementDetail"
 
 
 
@@ -43,14 +43,14 @@ export default new Router({
             },
 
             {
-                path: '/subscriberManages/subscriberManagements',
-                name: 'SubscriberManageSubscriberManagementManager',
-                component: SubscriberManageSubscriberManagementManager
+                path: '/subscribermanages/subscriberManagements',
+                name: 'SubscribermanageSubscriberManagementManager',
+                component: SubscribermanageSubscriberManagementManager
             },
             {
-                path: '/subscriberManages/subscriberManagements/:id',
-                name: 'SubscriberManageSubscriberManagementDetail',
-                component: SubscriberManageSubscriberManagementDetail
+                path: '/subscribermanages/subscriberManagements/:id',
+                name: 'SubscribermanageSubscriberManagementDetail',
+                component: SubscribermanageSubscriberManagementDetail
             },
 
 

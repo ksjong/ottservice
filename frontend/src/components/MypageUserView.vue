@@ -29,6 +29,8 @@
                 { text: "subscribeTime", value: "subscribeTime" },
                 { text: "serviceDate", value: "serviceDate" },
                 { text: "subscriberNumber", value: "subscriberNumber" },
+                { text: "", value: "" },
+                { text: "", value: "" },
             ],
             mypageUser : [],
         }),

@@ -18,7 +18,7 @@
                 <Date label="ServiceDt" v-model="item.serviceDt" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Date label="SubscribeTime" v-model="item.subscribeTime" :editMode="editMode" @change="change" />
+                <Number label="SubscribeTime" v-model="item.subscribeTime" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

@@ -16,7 +16,7 @@ public class ServiceStarted extends AbstractEvent {
     private String serviceName;
     private Long serviceId;
     private Date serviceDt;
-    private Date subscribeTime;
+    private Integer subscribeTime;
 
     public ServiceStarted(ServiceManagement aggregate) {
         super(aggregate);

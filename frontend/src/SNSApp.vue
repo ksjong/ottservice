@@ -61,7 +61,7 @@
                     <v-list-item
                         class="px-2"
                         key="subscriberManagements"
-                        to="/subscriberManages/subscriberManagements"
+                        to="/subscribermanages/subscriberManagements"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
@@ -167,7 +167,7 @@ export default {
                 title: 'SubscriberManagement', 
                 description: '', 
                 key: 'subscriberManagements', 
-                route: '/subscriberManages/subscriberManagements',
+                route: '/subscribermanages/subscriberManagements',
                 ImageUrl: '',
             },
             

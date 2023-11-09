@@ -16,7 +16,7 @@ public class SubscriptionCanceled extends AbstractEvent {
     private String serviceName;
     private Long serviceId;
     private Date subscribeDate;
-    private Date subscribeTime;
+    private Integer subscribeTime;
 
     public SubscriptionCanceled(Subscribe aggregate) {
         super(aggregate);

@@ -31,7 +31,7 @@ jobs:
         run: |
           mvn clean package -f ./subscribe/pom.xml
           mvn clean package -f ./service/pom.xml
-          mvn clean package -f ./subscriber manage/pom.xml
+          mvn clean package -f ./subscribermanage/pom.xml
           mvn clean package -f ./subscribercenter/pom.xml
 
       - name: Docker Build and push for Subscribe
@@ -54,15 +54,15 @@ jobs:
             ghcr.io/${{ github.repository }}/service:latest
             ghcr.io/${{ github.repository }}/service:${{ github.ref_name }}
             
-      - name: Docker Build and push for SubscriberManage
+      - name: Docker Build and push for Subscribermanage
         uses: docker/build-push-action@v4
         with:
-          context: ./subscriber manage
+          context: ./subscribermanage
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/subscriber-manage:latest
-            ghcr.io/${{ github.repository }}/subscriber-manage:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}/subscribermanage:latest
+            ghcr.io/${{ github.repository }}/subscribermanage:${{ github.ref_name }}
             
       - name: Docker Build and push for Subscribercenter
         uses: docker/build-push-action@v4

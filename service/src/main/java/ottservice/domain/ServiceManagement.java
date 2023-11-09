@@ -27,7 +27,7 @@ public class ServiceManagement {
 
     private Date serviceDt;
 
-    private Date subscribeTime;
+    private Integer subscribeTime;
 
     @PostPersist
     public void onPostPersist() {}

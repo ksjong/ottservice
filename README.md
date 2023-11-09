@@ -22,7 +22,7 @@ See the README.md files inside the each microservices directory:
 
 - subscribe
 - service
-- subscriber manage
+- subscribermanage
 - subscribercenter
 
 
@@ -41,7 +41,7 @@ mvn spring-boot:run
 ```
  http :8088/serviceManagements id="id" userId="userId" serviceName="serviceName" serviceId="serviceId" serviceDt="serviceDt" subscribeTime="subscribeTime" 
 ```
-- subscriber manage
+- subscribermanage
 ```
  http :8088/subscriberManagements id="id" serviceName="serviceName" serviceTime="serviceTime" subscriberNumber="subscriberNumber" 
 ```

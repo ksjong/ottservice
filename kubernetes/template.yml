@@ -83,22 +83,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: subscriber manage
+  name: subscribermanage
   labels:
-    app: subscriber manage
+    app: subscribermanage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: subscriber manage
+      app: subscribermanage
   template:
     metadata:
       labels:
-        app: subscriber manage
+        app: subscribermanage
     spec:
       containers:
-        - name: subscriber manage
-          image: username/subscriber manage:latest
+        - name: subscribermanage
+          image: username/subscribermanage:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -199,15 +199,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: subscriber manage
+  name: subscribermanage
   labels:
-    app: subscriber manage
+    app: subscribermanage
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: subscriber manage
+    app: subscribermanage
 
 
 ---

@@ -17,7 +17,7 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/serviceManagements/**, 
-        - id: subscriber manage
+        - id: subscribermanage
           uri: http://localhost:8084
           predicates:
             - Path=/subscriberManagements/**, 
@@ -57,8 +57,8 @@ spring:
           uri: http://service:8080
           predicates:
             - Path=/serviceManagements/**, 
-        - id: subscriber manage
-          uri: http://subscriberManage:8080
+        - id: subscribermanage
+          uri: http://subscribermanage:8080
           predicates:
             - Path=/subscriberManagements/**, 
         - id: subscribercenter

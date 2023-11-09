@@ -51,7 +51,7 @@ services:
       - ./service:/usr/src
       - ./maven-repo:/root/.m2
       
-  subscriber manage:
+  subscribermanage:
     depends_on: 
       - kafka
     image: adoptopenjdk/maven-openjdk11:latest
@@ -62,7 +62,7 @@ services:
       - 8084:8084
     working_dir: /usr/src
     volumes:
-      - ./subscriber manage:/usr/src
+      - ./subscribermanage:/usr/src
       - ./maven-repo:/root/.m2
       
   subscribercenter:

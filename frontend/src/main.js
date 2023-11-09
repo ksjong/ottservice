@@ -49,7 +49,7 @@ pluralCaseList.push( {plural: "subscribes/subscribes", pascal: "SubscribeSubscri
 
 pluralCaseList.push( {plural: "services/serviceManagements", pascal: "ServiceServiceManagement"} )
 
-pluralCaseList.push( {plural: "subscriberManages/subscriberManagements", pascal: "SubscriberManageSubscriberManagement"} )
+pluralCaseList.push( {plural: "subscribermanages/subscriberManagements", pascal: "SubscribermanageSubscriberManagement"} )
 
 
 

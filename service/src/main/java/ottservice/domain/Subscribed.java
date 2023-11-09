@@ -14,5 +14,5 @@ public class Subscribed extends AbstractEvent {
     private String serviceName;
     private Long serviceId;
     private Date subscribeDate;
-    private Date subscribeTime;
+    private Integer subscribeTime;
 }

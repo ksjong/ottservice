@@ -20,7 +20,7 @@
             <String label="ServiceName" v-model="value.serviceName" :editMode="editMode" :inputUI="''"/>
             <Number label="ServiceId" v-model="value.serviceId" :editMode="editMode" :inputUI="''"/>
             <Date label="ServiceDt" v-model="value.serviceDt" :editMode="editMode" :inputUI="''"/>
-            <Date label="SubscribeTime" v-model="value.subscribeTime" :editMode="editMode" :inputUI="''"/>
+            <Number label="SubscribeTime" v-model="value.subscribeTime" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>
