@@ -43,49 +43,34 @@ public class SubscriberManagement {
 
     //<<< Clean Arch / Port Method
     public static void increaseSubscriber(ServiceStarted serviceStarted) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        SubscriberManagement subscriberManagement = new SubscriberManagement();
-        repository().save(subscriberManagement);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(serviceStarted.get???()).ifPresent(subscriberManagement->{
-            
-            subscriberManagement // do something
-            repository().save(subscriberManagement);
-
-
-         });
-        */
-
+        repository()
+            .findById(serviceStarted.getServiceId())
+            .ifPresent(subscriberManagement -> {
+                subscriberManagement.setSubscriberNumber(
+                    subscriberManagement.getSubscriberNumber() + 1
+                );
+                subscriberManagement.setServiceTime(
+                    subscriberManagement.getServiceTime() + 30
+                );
+                repository().save(subscriberManagement);
+            });
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void decreaseSubscriber(ServiceCanceled serviceCanceled) {
-        //implement business logic here:
+        repository()
+            .findById(serviceCanceled.getServiceId())
+            .ifPresent(subscriberManagement -> {
+                subscriberManagement.setSubscriberNumber(
+                    subscriberManagement.getSubscriberNumber() - 1
+                );
+                subscriberManagement.setServiceTime(
+                    subscriberManagement.getServiceTime() - 30
+                );
 
-        /** Example 1:  new item 
-        SubscriberManagement subscriberManagement = new SubscriberManagement();
-        repository().save(subscriberManagement);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(serviceCanceled.get???()).ifPresent(subscriberManagement->{
-            
-            subscriberManagement // do something
-            repository().save(subscriberManagement);
-
-
-         });
-        */
-
+                repository().save(subscriberManagement);
+            });
     }
     //>>> Clean Arch / Port Method
 
